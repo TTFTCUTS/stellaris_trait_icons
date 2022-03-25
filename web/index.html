@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Icons</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="main.dart.js" type="application/javascript"></script>
+    </head>
+
+    <body>
+        <div class="images">
+            <img src="assets/mask_basic.png"/>
+            <img src="assets/mask_civic.png"/>
+            <img src="assets/mask_trait.png"/>
+
+            <img src="assets/border_basic.png"/>
+            <img src="assets/border_civic.png"/>
+            <img src="assets/border_trait.png"/>
+
+            <img src="assets/icon_positive.png"/>
+            <img src="assets/icon_negative.png"/>
+            <img src="assets/icon_super.png"/>
+            <img src="assets/icon_hive.png"/>
+            <img src="assets/icon_machine.png"/>
+            <img src="assets/icon_megacorp.png"/>
+            <img src="assets/icon_psi.png"/>
+            <img src="assets/icon_physics.png"/>
+            <img src="assets/icon_society.png"/>
+            <img src="assets/icon_engineering.png"/>
+
+            <img src="assets/icon_bugyellow.png"/>
+            <img src="assets/icon_bugblue.png"/>
+
+        </div>
+
+        <div class="content">
+            <canvas id="inputcanvas" width="29" height="29"></canvas>
+            <span id="arrow">=></span>
+            <canvas id="outputcanvas" width="29" height="29"></canvas>
+
+            <form>
+                <input type="file" id="file"/>
+
+                <div class="category">Input is a:</div>
+                <input type="radio" name="inputtype" value="basic" checked/> Plain icon<br/>
+                <input type="radio" name="inputtype" value="trait"/> Trait or tech category<br/>
+                <input type="radio" name="inputtype" value="civic"/> Civic<br/>
+
+                <div class="category">Input colour type:</div>
+                <input type="radio" name="inputcolour" value="alpha" checked/> Any colour icon with alpha<br/>
+                <input type="radio" name="inputcolour" value="black"/> Black icon on white background<br/>
+                <input type="radio" name="inputcolour" value="white"/> White icon on black background<br/>
+                <span>Existing icons:</span><br/>
+                <input type="radio" name="inputcolour" value="positive"/> Positive (blue-green)<br/>
+                <input type="radio" name="inputcolour" value="negative"/> Negative (red)<br/>
+                <input type="radio" name="inputcolour" value="super"/> Super (light blue: venerable, very strong etc)<br/>
+                <input type="radio" name="inputcolour" value="hive"/> Hive-mind (yellow, light symbol)<br/>
+                <input type="radio" name="outputcolour" value="machine"/> Machine or Genetic Ascension (blue, darker than Super)<br/>
+                <input type="radio" name="outputcolour" value="megacorp"/> Megacorp (yellow-green)<br/>
+                <input type="radio" name="inputcolour" value="psi"/> Psionic (purple)<br/>
+                <input type="radio" name="inputcolour" value="physics"/> Physics research (blue)<br/>
+                <input type="radio" name="inputcolour" value="society"/> Society research (green)<br/>
+                <input type="radio" name="inputcolour" value="engineering"/> Engineering research (yellow-orange)<br/>
+                <input type="radio" name="inputcolour" value="bugyellow"/> Bug Branch Yellow (orange-yellow)<br/>
+                <input type="radio" name="inputcolour" value="bugblue"/> Bug Branch Blue (slightly greener than physics)<br/>
+
+                <div class="category">Output should be a:</div>
+                <input type="radio" name="outputtype" value="trait" checked/> Trait or tech category<br/>
+                <input type="radio" name="outputtype" value="civic"/> Civic<br/>
+
+                <div class="category">With an inner margin:</div>
+                <input type="radio" name="border" value="false" checked/> No<br/>
+                <input type="radio" name="border" value="true"/> Yes<br/>
+
+                <div class="category">Output colour type:</div>
+                <input type="radio" name="outputcolour" value="positive" checked/> Positive (blue-green)<br/>
+                <input type="radio" name="outputcolour" value="negative"/> Negative (red)<br/>
+                <input type="radio" name="outputcolour" value="super"/> Super (light blue: venerable, very strong etc)<br/>
+                <input type="radio" name="outputcolour" value="hive"/> Hive-mind (yellow, light symbol)<br/>
+                <input type="radio" name="outputcolour" value="machine"/> Machine or Genetic Ascension (blue, darker than Super)<br/>
+                <input type="radio" name="outputcolour" value="megacorp"/> Megacorp (yellow-green)<br/>
+                <input type="radio" name="outputcolour" value="psi"/> Psionic (purple)<br/>
+                <input type="radio" name="outputcolour" value="physics"/> Physics research (blue)<br/>
+                <input type="radio" name="outputcolour" value="society"/> Society research (green)<br/>
+                <input type="radio" name="outputcolour" value="engineering"/> Engineering research (yellow-orange)<br/>
+                <input type="radio" name="outputcolour" value="bugyellow"/> Bug Branch Yellow (orange-yellow)<br/>
+                <input type="radio" name="outputcolour" value="bugblue"/> Bug Branch Blue (slightly greener than physics)<br/>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+name: 'stellaris_trait_icons'
+version: 2.0.0
+description: Put basic icons onto trait or civic backgrounds, or convert existing icons to other types.
+author: TTFTCUTS
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dev_dependencies:
+  build_runner: ^1.6.0
+  build_web_compilers: ^2.3.0
+  build_config: any
